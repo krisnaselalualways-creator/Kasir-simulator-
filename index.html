@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Supermarket Simulator</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<canvas id="c"></canvas>
+<div id="hud"><span id="hm"></span><span id="hr"></span><span id="hs"></span><span id="he" style="display:none"></span><span id="hc"></span></div>
+<div id="joy"><i id="knob"></i></div>
+<button class="fab" id="ph">📱 Ponsel</button>
+<button class="fab" id="act">🧾 Layani</button>
+<button class="fab" id="bx" style="display:none;bottom:calc(166px + env(safe-area-inset-bottom,0px));background:#c9a06a">📦</button>
+<div id="msg"></div><div id="hint">Kiri: gerak • Geser layar: lihat • Kasir: Layani lalu Scan • Kardus: angkat & isi rak</div>
+<div class="modal" id="bill" hidden><div class="card"><h3>🧾 Kasir</h3><ul id="bl"></ul><button id="sc" style="width:100%"></button>
+<div id="pay" hidden><div class="row"><span>Total belanja</span><b id="bt"></b></div>
+<div class="row"><span>Pelanggan bayar</span><b id="bp"></b></div>
+<div class="row"><span>Kembalian kamu</span><b id="bg" style="color:#c0504d"></b></div>
+<div class="grid" id="dn"></div>
+<div class="grid2"><button id="rs">Reset</button><button id="ok">✅ Beri kembalian</button></div></div>
+<button class="ghost" id="bc">Batal</button></div></div>
+<div class="modal" id="phone" hidden><div class="card"><div class="row"><b>📱 Ponsel</b><b id="pm"></b></div>
+<div class="tabs"><button data-t="0">📦 Stok</button><button data-t="3">💲 Harga</button><button data-t="4">🔀 Pindah rak</button><button data-t="1">🏪 Properti</button><button data-t="2">🗺️ Lahan</button></div>
+<div id="pb"></div><button class="ghost" id="pc">Tutup</button></div></div>
+<script src="three.min.js"></script>
+<script>window.THREE||document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>')</script>
+<script src="script.js"></script>
+</body></html>
 
